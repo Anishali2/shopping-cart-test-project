@@ -67,11 +67,7 @@ export default function ComplexGrid() {
                 QUANTITY: { (cart.filter(cartitem => cartitem.id === product.id)[0].qty) }
               </Typography>
             </Grid>
-            <Grid item>
-              <Typography sx={{ cursor: 'pointer' }} variant="body2">
-                Remove
-              </Typography>
-            </Grid>
+            
           </Grid>
           <Grid item>
             <Typography variant="subtitle1" component="div">

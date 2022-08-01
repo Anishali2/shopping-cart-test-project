@@ -5,12 +5,6 @@ export function addUser(user) {
     }
   }
 
-export function removeUser(id) {
-    return {
-      type: 'LOGOUT_USER',
-      id
-    }
-  }
 
   export function setCart(carts) {
     return {

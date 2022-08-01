@@ -23,7 +23,7 @@ export default function Login() {
         axios.post("https://api.escuelajs.co/api/v1/auth/login",data) .then(res => {
             localStorage.setItem("token", JSON.stringify(res.data.access_token));
             // alert("Login Successful");
-            navigate("/")
+            navigate("/loading")
         }
         ).catch(err => {
             alert("Email & Password incorrect");

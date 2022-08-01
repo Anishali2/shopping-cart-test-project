@@ -63,7 +63,8 @@ export default function Header() {
 
   const cart = JSON.parse(localStorage.getItem("cart"));
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const avatar = useSelector(state => state.app.avatar);
+  const avatar = useSelector(state => state.user.user_details.avatar);
+  console.log("avatar", avatar)
   const dispatch = useDispatch();
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const cartData = useSelector(state => state.user.cart);

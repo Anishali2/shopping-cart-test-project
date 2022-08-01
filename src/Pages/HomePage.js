@@ -101,11 +101,6 @@ export default function HomePage() {
         container
         style={{ display: "flex", justifyContent: "center" }}
       >
-
-      <Stack spacing={2}>
-
-      <Pagination count={10} onClick={(e)=> console.log(e.target.textContent)} color="primary" />
-      </Stack>
       </Grid>
 
         </Container>
